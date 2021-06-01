@@ -2,5 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.manuel28g.carsalesmobiletestdata">
-
+    <application
+        android:name=".CovidDataApplication"
+        tools:replace="android:name"/>
 </manifest>
