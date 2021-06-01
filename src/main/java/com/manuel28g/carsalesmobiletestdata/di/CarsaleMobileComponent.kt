@@ -1,6 +1,8 @@
 package com.manuel28g.carsalesmobiletestdata.di
 
+import android.app.Application
 import au.com.carsales.basemodule.dependency.component.BaseApplicationComponent
+import com.manuel28g.carsalesmobiletestdata.service.CovidDataServiceImpl
 import dagger.Component
 import javax.inject.Singleton
 
@@ -13,5 +15,6 @@ import javax.inject.Singleton
 
 @Singleton
 interface CarsaleMobileComponent: BaseApplicationComponent {
-
+        fun inject(application: Application)
+        fun inject(repository: CovidDataServiceImpl)
 }
